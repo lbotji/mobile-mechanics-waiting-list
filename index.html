@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Our Waiting List</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" type="text/css" href="src/style.css" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Font Awesome for WhatsApp icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="card" data-aos="fade-up">
+    <!-- 🌟 NEW INTRO SECTION -->
+    <div class="intro">
+      <h1>Mobile Mechanic Services – Coming Soon!</h1>
+      <p>
+        We're bringing expert car care directly to you where ever you are 24/7! 🚗🔧<br />
+        Our mobile mechanics specialize in routine maintenance, breakdown assistance, and basic repairs — all done at your home, on the road or workplace.
+      </p>
+      <p>
+        Sign up below to join the waiting list and be the first to know when we launch in your area!
+      </p>
+
+      <ul class="services-list">
+        <li>✔ Oil changes and tune-ups</li>
+        <li>✔ Battery replacements</li>
+        <li>✔ Brake repairs</li>
+        <li>✔ Emergency breakdown help</li>
+      </ul>
+    </div>
+
+    <!-- FORM -->
+    <h2>Join Our Waiting List</h2>
+    <p>Be the first to know when we launch. Sign up below!</p>
+
+    <form id="waitingListForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+      <label for="whatsapp">WhatsApp Number</label>
+      <div class="input-icon">
+        <i class="fab fa-whatsapp"></i>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. +27 72 123 4567" required pattern="^\+?\d{10,15}$" />
+      </div>
+
+      <label for="service">Service/Product You’re Interested In</label>
+      <input type="text" id="service" name="service" placeholder="Type here..." required />
+
+      <button type="submit">Join the List</button>
+    </form>
+
+    <!-- Thank You Pop-up -->
+    <div class="thank-you-message" id="thankYouMessage">
+      🎉 Thank you for joining!<br /><br />We'll keep you updated!
+    </div>
+  </div>
+
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Link to external JavaScript -->
+  <script src="src/script.js"></script>
+</body>
+</html>
