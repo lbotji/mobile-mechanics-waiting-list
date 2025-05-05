@@ -101,6 +101,75 @@ form input:focus {
   font-size: 18px;
 }
 
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styled dropdown */
+.styled-select {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  transition: border 0.3s ease;
+}
+
+.styled-select:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Hint text below dropdown */
+.select-hint {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Input field for 'Other Services' */
+.styled-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: border 0.3s ease;
+}
+
+.styled-input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.select-hint {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
 /* Submit button */
 form button {
   width: 100%;
