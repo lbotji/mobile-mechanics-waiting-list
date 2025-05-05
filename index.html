@@ -44,7 +44,7 @@
 
     <form id="waitingListForm">
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+      <input type="text" id="name" name="name" placeholder="Enter your full name and Surname" required />
 
       <label for="email">Email Address</label>
       <input type="email" id="email" name="email" placeholder="Enter your email address" required />
@@ -55,8 +55,18 @@
         <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. +27 72 123 4567" required pattern="^\+?\d{10,15}$" />
       </div>
 
-      <label for="service">Service/Product You’re Interested In</label>
-      <input type="text" id="service" name="service" placeholder="Type here..." required />
+     <label for="service">Service(s) You’re Interested In</label>
+<select id="service" name="service" multiple required class="styled-select">
+  <option value="oil">Oil changes and tune-ups</option>
+  <option value="battery">Battery replacements</option>
+  <option value="brakes">Brake repairs</option>
+  <option value="breakdown">Emergency breakdown help</option>
+  <option value="fuel">Fuel top-ups</option>
+</select>
+<small class="select-hint">Hold Ctrl (Windows) or Cmd (Mac) to select multiple options.</small>
+
+<label for="otherService">Other Service(s)</label>
+<input type="text" id="otherService" name="otherService" placeholder="Other services" class="styled-input" />
 
       <button type="submit">Join the List</button>
     </form>
